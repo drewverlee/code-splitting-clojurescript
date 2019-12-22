@@ -1,9 +1,11 @@
 (ns demo.components.product-listing
-  (:require [demo.env :as env]))
+  (:require [demo.env :as env]
+            [demo.components.shared :as shared]))
 
 (defn root []
   [:div
    [:h1 "Product Listing"]
+   [shared/subtitle {}]
 
    [:ul
     (for [{:keys [id title] :as product}

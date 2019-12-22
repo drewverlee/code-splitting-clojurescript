@@ -36,7 +36,11 @@
 
     :sign-up
     {:entries [demo.components.sign-up]
-     :depends-on #{:main}}}
+     :depends-on #{:main}}
+    :shared
+    {:entries [demo.components.shared]
+     :depends-on #{:main}}
+    }
 
    ;; reduce number of requests to make devtools request log less noisy, optional
    :devtools {:loader-mode :eval}
